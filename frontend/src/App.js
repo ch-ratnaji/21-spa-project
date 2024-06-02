@@ -25,7 +25,7 @@ import EventsPage from "./pages/Events";
 import { loader as eventsLoader } from "./pages/Events";
 import EventDetailPage from "./pages/EventDetail";
 import { loader as eventDetailLoader } from "./pages/EventDetail";
-import NewEventPage from "./pages/NewEvent";
+import NewEventPage, { action as newEventAction } from "./pages/NewEvent";
 import EditEventPage from "./pages/EditEvent";
 import HomePage from "./pages/Home";
 import RootLayout from "./pages/Root";
@@ -51,11 +51,19 @@ function App() {
             },
             {
               path: ":eventId",
-              element: <EventDetailPage />,
+              id: "event-detail",
               loader: eventDetailLoader,
+              children: [
+                {
+                  // path: ":eventId",
+                  index: true,
+                  element: <EventDetailPage />,
+                },
+                { path: "edit", element: <EditEventPage /> },
+              ],
             },
-            { path: "new", element: <NewEventPage /> },
-            { path: ":eventId/edit", element: <EditEventPage /> },
+
+            { path: "new", element: <NewEventPage />, action: newEventAction },
           ],
         },
       ],
