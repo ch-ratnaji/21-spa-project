@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Node.js","image":"https://www.webrexstudio.com/wp-content/uploads/2019/06/Node-js.jpg","date":"2024-06-19","description":"This is next","id":"cb7655c3-bd5a-4408-9aa2-ee181de427b9"},{"title":"react","image":"https://jslib.dev/wp-content/uploads/2022/03/Reactlogo.jpg","date":"2024-06-29","description":"i want to complete this ","id":"093ae64e-8d60-4ccb-94a1-8f7105b0e2b6"},{"title":"INS vikram aditya","image":"https://wallup.net/wp-content/uploads/2017/11/22/352683-INS_Vikramaditya-Indian-Navy.jpg","date":"2024-06-22","description":"i want to visit there","id":"9c2b23ad-b6a7-45c9-8302-179e8e7d9c30"}]}
